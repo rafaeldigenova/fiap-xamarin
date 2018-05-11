@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.ControlesBasicos.ConfigPage">
+    <ContentPage.Content>
+        <TableView>
+            <TableView.Root>
+                <TableSection Title="Privacidade" >
+                    
+                    <SwitchCell Text="Aceita Receber Email?" On="{Binding AceitaReceberEmail}" x:Name="switch"/>
+                    <ViewCell>
+                        <Entry Placeholder="Informe Seu Email" Text="{Binding Email}" IsVisible="{Binding On, Source={x:Reference Name=switch}}"/>
+                    </ViewCell>
+                </TableSection>
+                
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
