@@ -16,7 +16,7 @@ namespace XF.ControlesBasicos
 
         private void btnEnviar_Clicked(object sender, EventArgs e)
         {
-            if (ConfigPage.configuracoes != null && ConfigPage.configuracoes.AceitaReceberEmail)
+            if (ConfigPage.configuracoes != null && ConfigPage.configuracoes.Ativo)
             {
                 DisplayAlert("Mensagem"
                 , $"Email enviado para {ConfigPage.configuracoes.Email}", "OK");
