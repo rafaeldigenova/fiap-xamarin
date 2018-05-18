@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.MVVMBasic.View.AlunoView">
+    <ContentPage.Content>
+        <ListView x:Name="lstAlunos" ItemsSource="{Binding .}">
+            <ListView.Header>
+                <Label Text="Alunos"></Label>
+                <Button Clicked="btnAdicionarAlunos_Clicked"></Button>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}" />
+                    <TextCell Text="{Binding RM}" />
+                    <TextCell Text="{Binding Email}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>

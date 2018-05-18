@@ -8,7 +8,7 @@
             <TableView.Root>
                 <TableSection Title="Privacidade" >
                     
-                    <SwitchCell Text="Aceita Receber Email?" On="{Binding AceitaReceberEmail, Mode=TwoWay}" x:Name="switch"/>
+                    <SwitchCell Text="Aceita Receber Email?" On="{Binding Ativo, Mode=TwoWay}" x:Name="switch"/>
                     <ViewCell>
                         <Entry Placeholder="Informe Seu Email" Text="{Binding Email}" IsVisible="{Binding On, Source={x:Reference Name=switch}}"/>
                     </ViewCell>

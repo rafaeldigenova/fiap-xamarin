@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XF.MVVMBasic.View.NovoAlunoView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Cadastrar Novo Aluno" HorizontalTextAlignment="Center"></Label>
+            <Entry x:Name="txtName" Placeholder="Informe o Nome Do Aluno"></Entry>
+            <Entry x:Name="txtRM" Placeholder="Informe o RM Do Aluno"></Entry>
+            <Entry x:Name="txtEmail" Placeholder="Informe o Email Do Aluno"></Entry>
+            <Button x:Name="btnCadastrarAluno" Text="Cadastrar" Clicked="btnCadastrarAluno_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
