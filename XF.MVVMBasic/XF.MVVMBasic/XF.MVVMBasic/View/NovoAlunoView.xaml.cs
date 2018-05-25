@@ -10,19 +10,19 @@ using XF.MVVMBasic.Model;
 
 namespace XF.MVVMBasic.View
 {
-	[XamlCompilation(XamlCompilationOptions.Skip)]
-	public partial class NovoAlunoView : ContentPage
-	{
-		public NovoAlunoView ()
-		{
-			InitializeComponent ();
-		}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class NovoAlunoView : ContentPage
+    {
+        public NovoAlunoView()
+        {
+            InitializeComponent();
+        }
 
         private async void btnCadastrarAluno_Clicked(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtName.Text))
             {
-                await DisplayAlert("Atenção!", "Por favor, informe o nome do aluno","Ok");
+                await DisplayAlert("Atenção!", "Por favor, informe o nome do aluno", "Ok");
                 return;
             }
 
@@ -33,11 +33,10 @@ namespace XF.MVVMBasic.View
                 RM = txtRM.Text
             };
 
-            ListaAlunos.AddAluno(aluno);
+            App.AlunoVM.Adicionar(aluno);
 
             await DisplayAlert("Sucesso!", "Aluno inserido", "Ok!");
-
-            await Navigation.PopToRootAsync();
+            
         }
     }
 }

@@ -6,17 +6,15 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using XF.MVVMBasic.ViewModel;
 
-namespace XF.MVVMBasic.View
+namespace XF.Recursos.Estilo
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class AlunoView : ContentPage
+	public partial class SimplesView : ContentPage
 	{
-        public AlunoView()
-        {
-            InitializeComponent();
-        }
-        
-    }
+		public SimplesView ()
+		{
+			InitializeComponent ();
+		}
+	}
 }
