@@ -16,6 +16,9 @@
     <Compile Condition=" '$(EnableDefaultCompileItems)' == 'true' " Update="MainPage.xaml.cs">
       <DependentUpon>*.xaml</DependentUpon>
     </Compile>
+    <Compile Update="View\Aluno\EditAlunoView.xaml.cs">
+      <DependentUpon>EditAlunoView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

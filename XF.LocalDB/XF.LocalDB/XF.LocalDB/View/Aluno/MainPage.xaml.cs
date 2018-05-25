@@ -27,17 +27,15 @@ namespace XF.LocalDB.View.Aluno
             BindingContext = vmAluno;
             base.OnAppearing();
         }
-        private void OnNovo(object sender,
-       EventArgs args)
+        private void OnNovo(object sender, EventArgs args)
         {
-            Navigation.PushAsync(new
-           NovoAlunoView());
+            Navigation.PushAsync(new NovoAlunoView());
         }
         private void OnAlunoTapped(object
        sender, ItemTappedEventArgs args)
         {
-            var selecionado = args.Item as
-           XF.LocalDB.Model.Aluno;
+            var selecionado = args.Item as XF.LocalDB.Model.Aluno;
+            Navigation.PushAsync(new EditAlunoView(selecionado));
             DisplayAlert("Aluno selecionado", "Aluno: " + selecionado.Id, "OK");
         }
     }

@@ -17,8 +17,7 @@ namespace XF.LocalDB.ViewModel
         {
             get
             {
-                return
-               App.AlunoModel.GetAlunos().ToList();
+                return App.AlunoModel.GetAlunos().ToList();
             }
         }
         #endregion
