@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F861D197-09F9-4777-BF1C-260CC51C9A6D}</ProjectGuid>
+    <ProjectGuid>{29325AB4-67B8-4927-A364-62C6A0AB5CBD}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>XF.LocalDB.Droid</RootNamespace>
@@ -85,7 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XF.LocalDB\XF.LocalDB.csproj">
-      <Project>{548F1F87-B086-43AF-B05F-C4A1AC946BB0}</Project>
+      <Project>{4F2C0A02-BE66-41C6-B893-642B499C6514}</Project>
       <Name>XF.LocalDB</Name>
     </ProjectReference>
   </ItemGroup>

@@ -4,30 +4,29 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-using XF.LocalDB.Model;
+using XF.LocalDB.ViewModel;
 
 namespace XF.LocalDB
 {
 	public partial class App : Application
 	{
-		public App ()
-		{
-			InitializeComponent();
+        #region ViewModels
+        public static AlunoViewModel AlunoVM { get; set; }
+        public static UsuarioViewModel UsuarioVM { get; set; }
+        #endregion
 
-            MainPage = new NavigationPage(new View.Aluno.MainPage());
+        public App()
+        {
+            InitializeComponent();
+            InitializeApplication();
+
+            MainPage = new NavigationPage(new View.Login.LoginView() { BindingContext = App.UsuarioVM });
         }
 
-        static Aluno alunoModel;
-        public static Aluno AlunoModel
+        private void InitializeApplication()
         {
-            get
-            {
-                if (alunoModel == null)
-                {
-                    alunoModel = new Aluno();
-                }
-                return alunoModel;
-            }
+            if (AlunoVM == null) AlunoVM = new AlunoViewModel();
+            if (UsuarioVM == null) UsuarioVM = new UsuarioViewModel();
         }
 
         protected override void OnStart ()
@@ -45,5 +44,4 @@ namespace XF.LocalDB
 			// Handle when your app resumes
 		}
 	}
-
 }
