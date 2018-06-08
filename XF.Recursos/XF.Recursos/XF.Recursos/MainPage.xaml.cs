@@ -57,5 +57,21 @@ namespace XF.Recursos
         {
             await Navigation.PushAsync(new Estilo.TriggersView());
         }
+
+        private async void btnListSimples_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Lista.SimplesView());
+        }
+
+
+        private async void btnListClasse_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Lista.ClasseView());
+        }
+
+        private async void btnProduto_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Lista.ProdutoView());
+        }
     }
 }
