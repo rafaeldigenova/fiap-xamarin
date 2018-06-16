@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BCE3DA8C-DCFF-465A-A048-E39560A410B2}</ProjectGuid>
+    <ProjectGuid>{B0CD352D-8A95-45B5-A7EC-B8C2FA874DBF}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
     <RootNamespace>XF.AplicativoFIAP.iOS</RootNamespace>
@@ -124,7 +124,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\XF.AplicativoFIAP\XF.AplicativoFIAP.csproj">
-      <Project>{A05F939D-DFB8-49C4-94CA-3C253E653611}</Project>
+      <Project>{59381343-0855-46A1-9960-1CA48CE82C5D}</Project>
       <Name>XF.AplicativoFIAP</Name>
     </ProjectReference>
   </ItemGroup>

@@ -4,27 +4,19 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
-using XF.AplicativoFIAP.ViewModel;
 
 namespace XF.AplicativoFIAP
 {
-    public partial class App : Application
+	public partial class App : Application
 	{
-        public static ProfessorViewModel ProfessorVM { get; set; }
 		public App ()
-        {
+		{
 			InitializeComponent();
-            InitializeApplication();    
 
-			MainPage = new XF.AplicativoFIAP.MainPage();
-		}
-
-        private void InitializeApplication()
-        {
-            if (ProfessorVM == null) ProfessorVM = new ProfessorViewModel();
+            MainPage = new NavigationPage(new View.ProfessorView());
         }
 
-        protected override void OnStart ()
+		protected override void OnStart ()
 		{
 			// Handle when your app starts
 		}

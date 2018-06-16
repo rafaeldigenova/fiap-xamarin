@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{818F9549-43D6-4A51-AFE7-63E5FB5004FF}</ProjectGuid>
+    <ProjectGuid>{359A182E-D98E-4341-AA52-D46AEE65C897}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>XF.AplicativoFIAP.Droid</RootNamespace>
@@ -82,7 +82,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\XF.AplicativoFIAP\XF.AplicativoFIAP.csproj">
-      <Project>{A05F939D-DFB8-49C4-94CA-3C253E653611}</Project>
+      <Project>{59381343-0855-46A1-9960-1CA48CE82C5D}</Project>
       <Name>XF.AplicativoFIAP</Name>
     </ProjectReference>
   </ItemGroup>
